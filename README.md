@@ -17,3 +17,6 @@ Run scaling experiments
 ```bash
 python run.py
 ```
+## TODO 
+- tree of this repo
+  
