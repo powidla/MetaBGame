@@ -16,8 +16,8 @@ from logs import log_scaling_start, log_scaling_experiment, log_scaling_complete
 from prime import gauss_prng_keys
 
 AGENT_COUNTS = [10, 15, 18, 20]
-SCALING_CONFIG = {"NUM_ENVS": 1, 
-                  "NUM_STEPS": 1, "NUM_UPDATES": 2, "USE_IMPLICIT_GRADIENTS": False, "ACTOR_LR": 1e-4, "CRITIC_LR": 5e-4, "CLIP_EPS": 0.2, "GAE_LAMBDA": 0.95}
+SCALING_CONFIG = {"NUM_ENVS": 16, 
+                  "NUM_STEPS": 100, "NUM_UPDATES": 1e4, "USE_IMPLICIT_GRADIENTS": False, "ACTOR_LR": 1e-4, "CRITIC_LR": 5e-4, "CLIP_EPS": 0.2, "GAE_LAMBDA": 0.95}
 
 
 def make_agents(nagt: int, ecpds: list, adb: str = "agora") -> list:
