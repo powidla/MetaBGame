@@ -1,0 +1,21 @@
+def get_config():
+    return {
+        "NUM_ENVS": 10, 
+        "ACTIVATION": "tanh",
+        "ACTOR_LR": 3e-4,
+        "CRITIC_LR": 1e-3,
+        "NUM_STEPS": 100,  
+        "NUM_UPDATES": 10000,  
+        "NESTED_UPDATES": 1,
+        "CLIP_EPS": 0.2,
+        "CLIP_F": 0.2,
+        "GAMMA": 0.99,
+        "GAE_LAMBDA": 0.95,
+        "USE_IMPLICIT_GRADIENTS": True,  
+        "IHVP_BOUND": 1.0,
+        "NYSTROM_RANK": 5,
+        "NYSTROM_RHO": 50,
+        "MAX_AGENTS": 100, 
+        "SHARED_CRITIC": True,
+        "OBSERVATION_AUGMENTATION": True
+    }
