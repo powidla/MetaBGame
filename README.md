@@ -10,7 +10,7 @@ N-FBA implementation follows the [Friend-or-Foe repo](https://github.com/powidla
 ## Repository Structure
 ```
 MetaBGame/
-├── metabgame/                          # Core library
+├── metabgame/        # Core library
 │   ├── ac.py             # Actor-Critic implementation
 │   ├── config.py         # Config contains main parameters of the game
 │   ├── env.py            # Main environment
