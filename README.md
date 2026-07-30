@@ -8,6 +8,7 @@ The game may operate in a cooperative or competitive mode, with rewards structur
 N-FBA implementation follows the [Friend-or-Foe repo](https://github.com/powidla/Friend-Or-Foe/tree/main/models/Matlab).
 
 ## Repository Structure
+```
 MetaBGame/
 ├── metabgame/                          # Core library
 │   ├── ac.py             # Actor-Critic implementation
@@ -25,6 +26,7 @@ MetaBGame/
 ├── assets/
 │   ├── main.png          # Overview figure in the repo
 └── requirements/
+```
 
 ## Reproducing main results
 Set up the environment and download required packages
