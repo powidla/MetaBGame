@@ -7,6 +7,25 @@ The game may operate in a cooperative or competitive mode, with rewards structur
 
 N-FBA implementation follows the [Friend-or-Foe repo](https://github.com/powidla/Friend-Or-Foe/tree/main/models/Matlab).
 
+## Repository Structure
+MetaBGame/
+├── metabgame/                          # Core library
+│   ├── ac.py             # Actor-Critic implementation
+│   ├── config.py         # Config contains main parameters of the game
+│   ├── env.py            # Main environment
+│   ├── logs.py           # Logging of rewards, actions, aggregation for N agents 
+│   ├── plots.py          # Plotting the rewards and behavior curves
+│   ├── prime.py          # Random keys
+│   ├── run.py            # Main simulation
+│   ├── train.py          # training with PPO for Nash and Bayes
+│   └── utils.py          # Utility functions: loading and summary
+├── examples/
+│   ├── agent.json        # Example of the agent structure
+│   └── model.json        # Example of the model structure 
+├── assets/
+│   ├── main.png          # Overview figure in the repo
+└── requirements/
+
 ## Reproducing main results
 Set up the environment and download required packages
 ```bash
@@ -17,6 +36,4 @@ Run scaling experiments
 ```bash
 python run.py
 ```
-## TODO 
-- tree of this repo
   
